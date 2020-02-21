@@ -3,7 +3,7 @@
     <label for="number" class="col-2">Card Number</label>
     <input type="text" name="number" class="col-2" v-model="card.cardNumber" maxlength="16" @keyup="updateCard" placeholder="XXXX XXXX XXXX XXXX">
     <label for="cardholder" class="col-2">Cardholder Name</label>
-    <input type="text" name="cardholder" class="col-2" v-model="card.cardHolder" max-length="24" @keyup="updateCard" placeholder="Firstname Lastname">
+    <input type="text" name="cardholder" class="col-2" v-model="card.cardHolder" maxlength="24" @keyup="updateCard" placeholder="Firstname Lastname">
     <label for="month" class="col-1">Month</label>
     <label for="year" class="col-1">Year</label>
     <select name="month" v-model="card.validUntil.month" class="col-1" @change="updateCard">
